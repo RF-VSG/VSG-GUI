@@ -27,4 +27,12 @@ instrument_menu.add_command(label="Find Instrument", command=foo)
 main_menu.add_cascade(label="File", menu=file_menu)
 main_menu.add_cascade(label="Instrument", menu=instrument_menu)
 
+# Add toolbar to the root
+toolbar = Frame(root, bg="blue")
+btn_insert = Button(toolbar, text="Insert Something", command=foo)
+btn_insert.pack(side=LEFT, padx=5, pady=5)
+btn_print = Button(toolbar, text="Print", command=foo)
+btn_print.pack(side=LEFT, padx=5, pady=5)
+toolbar.pack(side=TOP, fill=X)
+
 root.mainloop()
