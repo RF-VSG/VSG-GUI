@@ -36,7 +36,7 @@ class SigGenUI:
         top_bar_frame.config(height=25)
         top_bar_frame.pack(fill=tk.X)    # NEED TO CHANGE
 
-        logo = tk.PhotoImage(file=os.path.join("img", "dance.gif"))
+        logo = tk.PhotoImage(file=os.path.join(os.path.dirname(__file__), "img", "dance.gif"))
         label_logo = ttk.Label(self.root, image=logo)
         label_logo.pack(side=tk.LEFT)                                                  # NEED TO DEBUG
 
